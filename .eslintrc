@@ -1,3 +1,7 @@
 {
-  "extends": ["wesbos"]
+  "extends": ["wesbos"],
+  "rules": {
+    "semi": [1, "always"],
+    "no-unused-vars": "off"
+  }
 }
