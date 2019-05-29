@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const NavigationWrapper = styled.nav`
   margin: 5px 0 10px 0; /* just to give some spacing */
@@ -6,9 +6,9 @@ export const NavigationWrapper = styled.nav`
   text-transform: uppercase;
   position: absolute;
   right: 0px;
-  font-family: 'Teko', Arial, Helvetica, sans-serif;
+  font-family: "Teko", Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
   display: none;
 
@@ -22,7 +22,7 @@ export const NavigationWrapper = styled.nav`
   }
 
   @media (min-width: 1200px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   ul li {
@@ -35,6 +35,8 @@ export const NavigationWrapper = styled.nav`
     a {
       padding: 0 0 0 10px;
       transition: all 0.2s ease;
+      text-decoration: none;
+      color: #000;
     }
 
     span {
