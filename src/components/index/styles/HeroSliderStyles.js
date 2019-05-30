@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Img from 'gatsby-image';
+import styled from "styled-components";
+import Img from "gatsby-image";
 
 export const StyledImg = styled(Img)`
   height: 800px;
@@ -35,7 +35,7 @@ export const WbnSlide = styled.div`
     transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1); /* easeInOutExpo */
 
     .wbn-header {
-      font-family: 'Teko', sans-serif;
+      font-family: "Teko", sans-serif;
       color: #fff;
       font-size: 2rem;
       font-weight: 800;

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const CitatWrapper = styled.div`
+export const QuoteWrapper = styled.div`
   background: #4d4d4d;
   text-align: center;
   padding: 40px 0;
