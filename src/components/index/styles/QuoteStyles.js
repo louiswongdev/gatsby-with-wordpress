@@ -11,4 +11,13 @@ export const QuoteWrapper = styled.div`
     max-width: 40px;
     margin: 20px auto 40px auto;
   }
+
+  h6 {
+    font-family: 'Times New Roman';
+    font-size: 28px;
+    color: #fff;
+    font-style: italic;
+    margin: 40px 20% 20px 20%;
+    line-height: 35px;
+  }
 `;

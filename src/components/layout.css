@@ -620,3 +620,22 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+a {
+  text-decoration: none;
+  color: #e10813;
+}
+
+.tango-thin-text {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.tango-text-white {
+  color: #fff !important;
+}
