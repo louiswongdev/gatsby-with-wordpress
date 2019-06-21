@@ -11,7 +11,7 @@ import {
 const CTA = ({ image, link, text }) => (
   <CTAImage>
     <StyledImg fluid={image} />
-    <Link to={Link} >
+    <Link to={link} >
       <CTAImageTextWrapper>
         <CTAImageText>{text}</CTAImageText>
       </CTAImageTextWrapper>
