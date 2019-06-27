@@ -25,7 +25,7 @@ export const StyledReadMore = styled(Link)`
   font-weight: 800;
   color: #fff;
   position: relative;
-  width: 70px;
+  width: 90px;
   height: 30px;
   display: block;
   background: #000;

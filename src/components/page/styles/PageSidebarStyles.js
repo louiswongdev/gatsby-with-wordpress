@@ -36,9 +36,10 @@ export const SidebarMenu = styled.ul`
     }
   }
 
-  .sidebar-highlighted {
+  .sidebar-highlighted, a {
     color: #d22e26;
   }
+  
 
   p {
     font-size: 0.85rem;
