@@ -31,6 +31,10 @@ export const StyledReadMore = styled(Link)`
   background: #000;
   padding: 3px 0 0 10px;
   margin-bottom: 30px;
+  
+  &:visited {
+    color: #fff;
+  }
 
   :after {
     left: 100%;
@@ -53,4 +57,5 @@ export const StyledReadMore = styled(Link)`
   :hover:after {
     border-left-color: #d22e26;
   }
+
 `;
