@@ -65,7 +65,11 @@ exports.createPages = async ({ graphql, actions }) => {
     allWordpressCategory,
   } = result.data;
 
-  // Create archive pages for each category
+/**
+ * ------------------------------------------
+ * Create Archive Pages for Categories
+ * ------------------------------------------
+ */
   allWordpressCategory.edges.forEach(catEdge => {
     // First filter out the posts that belongs to the current category
     const filteredPosts = allWordpressPost.edges.filter(
@@ -92,8 +96,11 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   });
 
-  
-
+  /**
+   * ------------------------------------------
+   * Create Wordpress Pages
+   * ------------------------------------------
+   */
   allWordpressPage.edges.forEach(edge => {
     if (edge.node.status === "publish") {
       createPage({
@@ -108,4 +115,23 @@ exports.createPages = async ({ graphql, actions }) => {
       });
     }
   });
+
+  /**
+   * ------------------------------------------
+   * Create Wordpress Posts
+   * ------------------------------------------
+   */
+  allWordpressPost.edges.forEach(edge => {
+    if(edge.node.status === 'publish') {
+      createPage({
+        // no forward slash after `/trends` since link returned from WP already has it
+        // i.e --> "/en-historisk-julkaramell/",
+        path: `/trends${edge.node.link}/`,
+        component: slash(postTemplate),
+        context: {
+          id: edge.node.id,
+        }
+      })
+    }
+  })
 };
